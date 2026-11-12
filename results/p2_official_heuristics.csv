@@ -1,0 +1,4 @@
+﻿method,cost,expanded,generated,max_frontier,time_ms
+Dijkstra (h=0),7,15,23,10,0.1416
+曼哈顿距离,7,11,18,9,0.0569
+"修正曼哈顿 max(0,d-1)",7,11,18,9,0.0458

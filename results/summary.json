@@ -1,0 +1,415 @@
+{
+  "p1_official": [
+    {
+      "method": "A*(曼哈顿)",
+      "expanded": 14,
+      "generated": 15,
+      "max_frontier": 3,
+      "path_len": 7,
+      "cost": 7.0,
+      "time_ms": 0.0688,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ]
+    },
+    {
+      "method": "A*(曼哈顿, larger_g)",
+      "expanded": 14,
+      "generated": 16,
+      "max_frontier": 4,
+      "path_len": 7,
+      "cost": 7.0,
+      "time_ms": 0.0431,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ]
+    },
+    {
+      "method": "Dijkstra(h=0)",
+      "expanded": 17,
+      "generated": 17,
+      "max_frontier": 3,
+      "path_len": 7,
+      "cost": 7.0,
+      "time_ms": 0.0441,
+      "path": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ]
+    }
+  ],
+  "p1_density": [
+    [
+      0.1,
+      40,
+      291.4,
+      259.18,
+      43.15,
+      34
+    ],
+    [
+      0.15,
+      40,
+      273.98,
+      223.8,
+      55.15,
+      34
+    ],
+    [
+      0.2,
+      40,
+      260.52,
+      187.62,
+      53.38,
+      34.05
+    ],
+    [
+      0.25,
+      40,
+      237.43,
+      157.18,
+      54.88,
+      34.2
+    ],
+    [
+      0.3,
+      40,
+      211.7,
+      125.75,
+      66.85,
+      34.65
+    ]
+  ],
+  "p1_weighted_astar": {
+    "header": [
+      "w",
+      "avg_expanded",
+      "avg_path_len",
+      "avg_path_ratio",
+      "max_path_ratio",
+      "suboptimal_maps",
+      "n_maps"
+    ],
+    "rows": [
+      [
+        1.0,
+        176.93,
+        34.1,
+        1.0,
+        1.0,
+        0,
+        40
+      ],
+      [
+        1.5,
+        46.15,
+        35.3,
+        1.0353,
+        1.1176,
+        20,
+        40
+      ],
+      [
+        2.0,
+        45.33,
+        35.75,
+        1.0485,
+        1.1765,
+        25,
+        40
+      ],
+      [
+        2.5,
+        45.27,
+        36.2,
+        1.0618,
+        1.2353,
+        27,
+        40
+      ],
+      [
+        3.0,
+        45.08,
+        36.3,
+        1.0645,
+        1.2353,
+        28,
+        40
+      ]
+    ]
+  },
+  "p2_official": [
+    {
+      "method": "Dijkstra (h=0)",
+      "cost": 7,
+      "expanded": 15,
+      "generated": 23,
+      "max_frontier": 10,
+      "time_ms": 0.1416
+    },
+    {
+      "method": "曼哈顿距离",
+      "cost": 7,
+      "expanded": 11,
+      "generated": 18,
+      "max_frontier": 9,
+      "time_ms": 0.0569
+    },
+    {
+      "method": "修正曼哈顿 max(0,d-1)",
+      "cost": 7,
+      "expanded": 11,
+      "generated": 18,
+      "max_frontier": 9,
+      "time_ms": 0.0458
+    }
+  ],
+  "p2_summary": {
+    "n_maps": 40,
+    "cost_mismatch_manhattan": 0,
+    "avg_expanded_h0": 247.1,
+    "avg_expanded_manhattan": 238.07,
+    "avg_expanded_corrected": 238.43,
+    "avg_speedup_manhattan": 1.041,
+    "avg_speedup_corrected": 1.04
+  },
+  "p3_official_value": 5.0,
+  "p3_variants": [
+    {
+      "order": "natural",
+      "value": 5.0,
+      "visited": 14,
+      "leaves": 7,
+      "cutoffs": 2,
+      "pruned": 1
+    },
+    {
+      "order": "best",
+      "value": 5.0,
+      "visited": 11,
+      "leaves": 5,
+      "cutoffs": 2,
+      "pruned": 4
+    },
+    {
+      "order": "worst",
+      "value": 5.0,
+      "visited": 15,
+      "leaves": 8,
+      "cutoffs": 0,
+      "pruned": 0
+    },
+    {
+      "order": "random(avg200)",
+      "value": 5.0,
+      "visited": 13.48,
+      "leaves": "-",
+      "cutoffs": "-",
+      "pruned": "-"
+    }
+  ],
+  "p3_summary": {
+    "n_trees": 60,
+    "avg_minimax_visited": 66.12,
+    "avg_ab_natural": 46.23,
+    "avg_ab_best": 26.67,
+    "avg_ab_worst": 65.08,
+    "avg_ab_random": 46.57,
+    "reduction_natural_pct": 30.08,
+    "reduction_best_pct": 59.66
+  },
+  "p4": {
+    "H2": {
+      "target": "T2",
+      "value": -1,
+      "visited": 16
+    },
+    "H4": {
+      "target": "T3",
+      "value": 3,
+      "visited": 56
+    },
+    "pv_H2": [
+      [
+        "A",
+        "T2",
+        2,
+        2
+      ],
+      [
+        "B",
+        "T3",
+        3,
+        -1
+      ]
+    ],
+    "pv_H4": [
+      [
+        "A",
+        "T3",
+        -1,
+        -1
+      ],
+      [
+        "B",
+        "T1",
+        1,
+        -2
+      ],
+      [
+        "A",
+        "T2",
+        0,
+        -2
+      ],
+      [
+        "B",
+        "T4",
+        -5,
+        3
+      ]
+    ],
+    "root_ranking": [
+      [
+        2,
+        "T1",
+        -1,
+        -4
+      ],
+      [
+        2,
+        "T2",
+        2,
+        -1
+      ],
+      [
+        2,
+        "T3",
+        -1,
+        -2
+      ],
+      [
+        2,
+        "T4",
+        -1,
+        -4
+      ],
+      [
+        4,
+        "T1",
+        -1,
+        -5
+      ],
+      [
+        4,
+        "T2",
+        2,
+        1
+      ],
+      [
+        4,
+        "T3",
+        -1,
+        3
+      ],
+      [
+        4,
+        "T4",
+        -1,
+        -7
+      ]
+    ]
+  }
+}

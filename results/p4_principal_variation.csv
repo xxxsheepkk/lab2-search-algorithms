@@ -1,0 +1,3 @@
+﻿depth,ply1,ply2,ply3,ply4
+H=2,"A:T2(gain=2,U=2)","B:T3(gain=3,U=-1)"
+H=4,"A:T3(gain=-1,U=-1)","B:T1(gain=1,U=-2)","A:T2(gain=0,U=-2)","B:T4(gain=-5,U=3)"

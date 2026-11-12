@@ -1,0 +1,6 @@
+﻿obstacle_density,n_mazes,avg_expanded_h0,avg_expanded_manhattan,avg_expanded_tie_larger_g,avg_path_len
+0.1,40,291.4,259.18,43.15,34
+0.15,40,273.98,223.8,55.15,34
+0.2,40,260.52,187.62,53.38,34.05
+0.25,40,237.43,157.18,54.88,34.2
+0.3,40,211.7,125.75,66.85,34.65
